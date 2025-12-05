@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elegance Salon — Premium beauty and grooming services.">
+    <title>Elegance Salon — Hair, Beauty & Wellness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root{--primary:#a55581;--secondary:#c291a9;--dark:#2c1f2f;--light:#faf5f8;--muted:#7a6b75}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Lato,system-ui,sans-serif;background:#fff;color:var(--dark)}
+      .header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:40px 20px;text-align:center}
+      .header h1{margin:0;font-size:40px;font-family:Playfair Display,serif}
+      .header p{margin:12px 0 0;font-size:16px;opacity:0.95}
+      .nav{background:#fff;padding:16px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+      .nav a{text-decoration:none;color:var(--dark);font-weight:600;font-size:14px}
+      .nav a:hover{color:var(--primary)}
+      .container{max-width:1000px;margin:0 auto;padding:20px}
+      .hero{text-align:center;margin:40px 0;padding:40px 20px;background:var(--light);border-radius:12px}
+      .hero h2{font-size:32px;margin:0 0 12px;color:var(--dark);font-family:Playfair Display,serif}
+      .hero p{color:var(--muted);font-size:16px;margin:0}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin:20px 0}
+      .card{background:#fff;border:1px solid #e5d5e0;border-radius:12px;padding:24px;transition:all .3s ease}
+      .card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(165,85,129,0.15)}
+      .card h3{margin:0 0 8px;font-size:22px;color:var(--primary);font-family:Playfair Display,serif}
+      .card p{margin:0;color:var(--muted);font-size:14px}
+      .price{font-size:20px;font-weight:700;color:var(--primary);margin-top:12px}
+      .duration{font-size:13px;color:var(--muted);margin-top:4px}
+      .btn{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer;margin-top:12px;transition:all .2s}
+      .btn:hover{background:var(--secondary)}
+      .form-group{margin-bottom:16px}
+      .form-group label{display:block;margin-bottom:6px;font-weight:600;color:var(--dark)}
+      .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:1px solid #e5d5e0;border-radius:6px;font-family:inherit;font-size:14px}
+      .section{margin:40px 0}
+      .section h2{font-size:28px;margin:0 0 20px;color:var(--dark);font-family:Playfair Display,serif}
+      .footer{background:var(--dark);color:#fff;padding:20px;text-align:center;margin-top:40px;font-size:14px}
+      .booking-form{max-width:500px;margin:20px auto;background:var(--light);padding:24px;border-radius:12px}
+      .whatsapp-btn{background:#25d366;color:#fff}
+      .whatsapp-btn:hover{background:#1fa756}
+      .testimonial{background:var(--light);padding:20px;border-radius:8px;margin:12px 0}
+      .testimonial strong{color:var(--primary)}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>✨ Elegance Salon</h1>
+      <p>Premium Beauty, Hair & Wellness Services</p>
+    </header>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#booking">Book Now</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section class="hero">
+        <h2>Your Beauty, Our Passion</h2>
+        <p>Discover premium salon services designed to make you feel confident and beautiful.</p>
+      </section>
+
+      <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>💇 Hair Cutting</h3>
+            <p>Professional haircuts for all hair types and styles. Expert stylists trained in latest trends.</p>
+            <div class="price">Rs 500–1,200</div>
+            <div class="duration">Duration: 30–45 minutes</div>
+            <button class="btn">Book Now</button>
+          </div>
+
+          <div class="card">
+            <h3>💅 Manicure & Pedicure</h3>
+            <p>Relaxing hand and foot care with premium nail polish and treatments.</p>
+            <div class="price">Rs 400–800</div>
+            <div class="duration">Duration: 45 minutes</div>
+            <button class="btn">Book Now</button>
+          </div>
+
+          <div class="card">
+            <h3>💆 Facial Treatment</h3>
+            <p>Customized facials using organic products. Suitable for all skin types.</p>
+            <div class="price">Rs 800–1,500</div>
+            <div class="duration">Duration: 60 minutes</div>
+            <button class="btn">Book Now</button>
+          </div>
+
+          <div class="card">
+            <h3>🧖 Full Body Massage</h3>
+            <p>Relax with our professional massage therapy. Oil and Swedish techniques available.</p>
+            <div class="price">Rs 1,200–2,000</div>
+            <div class="duration">Duration: 60–90 minutes</div>
+            <button class="btn">Book Now</button>
+          </div>
+
+          <div class="card">
+            <h3>🎨 Hair Coloring</h3>
+            <p>Vibrant hair colors using premium brands. Expert color matching and care.</p>
+            <div class="price">Rs 1,500–3,000</div>
+            <div class="duration">Duration: 90–120 minutes</div>
+            <button class="btn">Book Now</button>
+          </div>
+
+          <div class="card">
+            <h3>🌸 Bridal Package</h3>
+            <p>Complete bridal beauty package including makeup, hair, nails, and more.</p>
+            <div class="price">Rs 5,000–8,000</div>
+            <div class="duration">Duration: 3–4 hours</div>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <h2>Pricing & Packages</h2>
+        <p>All prices are per session. Package discounts available for multiple bookings.</p>
+      </section>
+
+      <section id="booking" class="section">
+        <h2>Book Your Appointment</h2>
+        <div class="booking-form">
+          <form onsubmit="handleBooking(event)">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Your contact number" required>
+            </div>
+            <div class="form-group">
+              <label>Service</label>
+              <select required>
+                <option value="">Select a service</option>
+                <option>Hair Cutting</option>
+                <option>Manicure & Pedicure</option>
+                <option>Facial Treatment</option>
+                <option>Full Body Massage</option>
+                <option>Hair Coloring</option>
+                <option>Bridal Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" required>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <input type="time" required>
+            </div>
+            <div class="form-group">
+              <label>Additional Notes</label>
+              <textarea placeholder="Any special requests?" rows="2"></textarea>
+            </div>
+            <button class="btn" type="submit" style="width:100%">Confirm Booking</button>
+          </form>
+          <p style="text-align:center;margin-top:16px;color:var(--muted)">Or book via WhatsApp for instant confirmation!</p>
+          <a class="btn whatsapp-btn" href="https://wa.me/923128778123?text=Hi,%20I'd%20like%20to%20book%20an%20appointment%20at%20Elegance%20Salon!" style="width:100%;text-align:center;margin-top:8px">Book on WhatsApp</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Why Choose Elegance?</h2>
+        <div class="testimonial">
+          <strong>Expert Stylists:</strong> Our team is trained in the latest beauty trends and techniques.
+        </div>
+        <div class="testimonial">
+          <strong>Premium Products:</strong> We use only high-quality, certified beauty products.
+        </div>
+        <div class="testimonial">
+          <strong>Hygiene & Comfort:</strong> Pristine facilities with a relaxing ambiance.
+        </div>
+        <div class="testimonial">
+          <strong>Customer Care:</strong> Your satisfaction is our priority. 100% satisfaction guarantee.
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p><strong>📞 Phone:</strong> 03128778123</p>
+        <p><strong>📧 Email:</strong> saniaobaid725@email.com</p>
+        <p><strong>📍 Location:</strong> Clifton, Karachi, Pakistan</p>
+        <p><strong>🕒 Hours:</strong> Mon–Sun, 10 AM–9 PM</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>Elegance Salon © 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleBooking(e){
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('input[type="text"]').value;
+        const phone = form.querySelector('input[type="tel"]').value;
+        const service = form.querySelector('select').value;
+        alert(`Thank you, ${name}! Your booking for ${service} has been confirmed. We'll call you at ${phone} to confirm the details.`);
+        form.reset();
+      }
+    </script>
+  </body>
+</html>
