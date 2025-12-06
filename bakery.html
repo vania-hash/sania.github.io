@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sweet Bakes — Fresh pastries and custom cakes delivered daily.">
+    <title>Sweet Bakes — Bakery & Pastries</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root{--primary:#d97706;--secondary:#f59e0b;--dark:#1f2937;--light:#f9fafb;--muted:#6b7280}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Poppins,system-ui,sans-serif;background:#fff;color:var(--dark)}
+      .header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:20px;text-align:center}
+      .header h1{margin:0;font-size:32px}
+      .header p{margin:8px 0 0;font-size:14px;opacity:0.9}
+      .nav{background:#fff;padding:12px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;justify-content:center;gap:16px}
+      .nav a{text-decoration:none;color:var(--dark);font-weight:600;font-size:14px}
+      .nav a:hover{color:var(--primary)}
+      .container{max-width:1000px;margin:0 auto;padding:20px}
+      .hero{text-align:center;margin:40px 0}
+      .hero h2{font-size:36px;margin:0 0 12px;color:var(--dark)}
+      .hero p{color:var(--muted);font-size:16px;margin:0}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:20px 0}
+      .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;transition:all .3s ease;cursor:pointer}
+      .card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(217,119,6,0.15)}
+      .card h3{margin:0 0 8px;font-size:20px}
+      .card p{margin:0;color:var(--muted);font-size:14px}
+      .price{font-size:18px;font-weight:700;color:var(--primary);margin-top:12px}
+      .btn{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer;margin-top:12px;transition:all .2s}
+      .btn:hover{background:var(--secondary)}
+      .form-group{margin-bottom:16px}
+      .form-group label{display:block;margin-bottom:6px;font-weight:600}
+      .form-group input,.form-group textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:6px;font-family:inherit;font-size:14px}
+      .form-group textarea{resize:vertical}
+      .section{margin:40px 0}
+      .section h2{font-size:28px;margin:0 0 20px;color:var(--dark)}
+      .footer{background:var(--dark);color:#fff;padding:20px;text-align:center;margin-top:40px;font-size:14px}
+      .order-form{max-width:500px;margin:20px auto}
+      .whatsapp-btn{background:#25d366;color:#fff}
+      .whatsapp-btn:hover{background:#1fa756}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>🍰 Sweet Bakes Bakery</h1>
+      <p>Fresh Pastries • Custom Cakes • Daily Delivery</p>
+    </header>
+
+    <nav class="nav">
+      <a href="#menu">Menu</a>
+      <a href="#order">Order Now</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section class="hero">
+        <h2>Handcrafted Goodness, Delivered Fresh</h2>
+        <p>Order your favorite pastries, cakes, and cookies online. Same-day delivery available!</p>
+      </section>
+
+      <!-- Case study section removed per user request -->
+
+      <section id="menu" class="section">
+        <h2>Our Menu</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>🥐 Croissants</h3>
+            <p>Buttery, flaky French croissants baked fresh daily.</p>
+            <div class="price">$0.43</div>
+            <button class="btn">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <h3>🍪 Chocolate Chip Cookies</h3>
+            <p>Soft and chewy cookies loaded with dark chocolate chips.</p>
+            <div class="price">$0.29 (6-pack)</div>
+            <button class="btn">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <h3>🎂 Custom Cakes</h3>
+            <p>Celebrate with a custom-designed cake. Orders 48 hours in advance.</p>
+            <div class="price">$5.40+</div>
+            <button class="btn">Order Custom</button>
+          </div>
+
+          <div class="card">
+            <h3>🧁 Cupcakes</h3>
+            <p>Assorted flavors: vanilla, chocolate, strawberry, and more.</p>
+            <div class="price">$0.18 each</div>
+            <button class="btn">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <h3>🫓 Brownies</h3>
+            <p>Dense, fudgy brownies — perfect with coffee or tea.</p>
+            <div class="price">$0.36</div>
+            <button class="btn">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <h3>🥧 Fruit Tarts</h3>
+            <p>Crispy pastry filled with custard and fresh seasonal fruit.</p>
+            <div class="price">$0.65</div>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="section">
+        <h2>Quick Order</h2>
+        <div class="order-form">
+          <form onsubmit="handleOrder(event)">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Your phone number" required>
+            </div>
+            <div class="form-group">
+              <label>What would you like to order?</label>
+              <textarea placeholder="E.g., 2x Croissants, 1x Chocolate Cake" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Delivery Address</label>
+              <textarea placeholder="Enter your delivery address" rows="2" required></textarea>
+            </div>
+            <button class="btn" type="submit" style="width:100%">Place Order</button>
+          </form>
+          <p style="text-align:center;margin-top:20px;color:var(--muted)">Or message us directly on WhatsApp for faster service!</p>
+          <a class="btn whatsapp-btn" href="https://wa.me/923128778123?text=Hi,%20I'd%20like%20to%20order%20some%20items%20from%20Sweet%20Bakes!" style="width:100%;text-align:center">Order via WhatsApp</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About Sweet Bakes</h2>
+        <p>We've been baking fresh, delicious pastries and cakes for over 5 years. Every item is made with premium ingredients and a lot of love. We believe in quality, freshness, and customer satisfaction.</p>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <p><strong>📞 Phone:</strong> 03128778123</p>
+        <p><strong>📧 Email:</strong> saniaobaid725@email.com</p>
+        <p><strong>📍 Location:</strong> Karachi, Pakistan</p>
+        <p><strong>🕒 Hours:</strong> Mon–Sat, 8 AM–8 PM | Sun, 10 AM–6 PM</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>Sweet Bakes Bakery © 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleOrder(e){
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('input[type="text"]').value;
+        const phone = form.querySelector('input[type="tel"]').value;
+        const order = form.querySelectorAll('textarea')[0].value;
+        alert(`Thank you, ${name}! Your order has been received. We'll contact you soon at ${phone}.`);
+        form.reset();
+      }
+    </script>
+  </body>
+</html>

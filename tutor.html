@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pro Tutor Academy — Expert online and in-person tutoring services.">
+    <title>Pro Tutor Academy — Expert Online Tutoring</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root{--primary:#2563eb;--secondary:#3b82f6;--dark:#1e293b;--light:#f0f9ff;--muted:#64748b}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Inter,system-ui,sans-serif;background:#fff;color:var(--dark)}
+      .header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:40px 20px;text-align:center}
+      .header h1{margin:0;font-size:36px;font-weight:700}
+      .header p{margin:12px 0 0;font-size:16px;opacity:0.95}
+      .nav{background:#fff;padding:16px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+      .nav a{text-decoration:none;color:var(--dark);font-weight:600;font-size:14px}
+      .nav a:hover{color:var(--primary)}
+      .container{max-width:1000px;margin:0 auto;padding:20px}
+      .hero{text-align:center;margin:40px 0;padding:40px 20px;background:var(--light);border-radius:12px}
+      .hero h2{font-size:32px;margin:0 0 12px;color:var(--dark)}
+      .hero p{color:var(--muted);font-size:16px;margin:0}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:20px 0}
+      .card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;transition:all .3s ease}
+      .card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(37,99,235,0.15)}
+      .card h3{margin:0 0 8px;font-size:20px;color:var(--primary)}
+      .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+      .price{font-size:22px;font-weight:700;color:var(--primary);margin-top:12px}
+      .session-info{font-size:13px;color:var(--muted);margin-top:4px}
+      .btn{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer;margin-top:12px;transition:all .2s}
+      .btn:hover{background:var(--secondary)}
+      .form-group{margin-bottom:16px}
+      .form-group label{display:block;margin-bottom:6px;font-weight:600;color:var(--dark)}
+      .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit;font-size:14px}
+      .section{margin:40px 0}
+      .section h2{font-size:28px;margin:0 0 20px;color:var(--dark)}
+      .footer{background:var(--dark);color:#fff;padding:20px;text-align:center;margin-top:40px;font-size:14px}
+      .booking-form{max-width:500px;margin:20px auto;background:var(--light);padding:24px;border-radius:12px}
+      .whatsapp-btn{background:#25d366;color:#fff}
+      .whatsapp-btn:hover{background:#1fa756}
+      .stat{text-align:center;padding:20px;background:var(--light);border-radius:8px;margin:12px 0}
+      .stat-num{font-size:32px;font-weight:700;color:var(--primary)}
+      .stat-text{color:var(--muted);font-size:14px}
+      .subject-badge{display:inline-block;background:var(--light);color:var(--primary);padding:6px 12px;border-radius:20px;font-size:13px;margin:4px;font-weight:600}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>📚 Pro Tutor Academy</h1>
+      <p>Expert Online & In-Person Tutoring — Personalized Learning</p>
+    </header>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#booking">Book Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section class="hero">
+        <h2>Achieve Your Academic Goals</h2>
+        <p>Expert tutors offering personalized sessions in 15+ subjects. Online and offline available.</p>
+      </section>
+
+      <!-- Case study section removed per user request -->
+
+      <section id="services" class="section">
+        <h2>Our Tutoring Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>🖥️ Online Tutoring</h3>
+            <p>Learn from home with interactive sessions via Zoom. Flexible scheduling for working professionals.</p>
+            <div class="price">$2.16/hour</div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <div class="card">
+            <h3>🏫 In-Person Sessions</h3>
+            <p>One-on-one coaching at our center in Karachi. Personalized study plans tailored to your needs.</p>
+            <div class="price">$2.88/hour</div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <div class="card">
+            <h3>👥 Group Classes</h3>
+            <p>Cost-effective group sessions (3–5 students). Same professional quality, lower rates.</p>
+            <div class="price">$1.44/person/hour</div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <div class="card">
+            <h3>📝 Exam Prep</h3>
+            <p>Targeted preparation for O-Levels, A-Levels, MCAT, and ECAT. Practice tests included.</p>
+            <div class="price">$4.32/hour</div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <div class="card">
+            <h3>🌍 Language Courses</h3>
+            <p>English, Urdu, Spanish, and French. Conversational and academic levels available.</p>
+            <div class="price">$2.52/hour</div>
+            <button class="btn">Learn More</button>
+          </div>
+
+          <div class="card">
+            <h3>💡 Test-Taking Tips</h3>
+            <p>Master strategies for standardized tests. Build confidence and improve scores.</p>
+            <div class="price">$1.80/session</div>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="subjects" class="section">
+        <h2>Subjects We Cover</h2>
+        <p style="text-align:center;margin-bottom:20px;color:var(--muted)">We tutor across multiple levels and subjects:</p>
+        <div style="text-align:center">
+          <span class="subject-badge">Mathematics</span>
+          <span class="subject-badge">Physics</span>
+          <span class="subject-badge">Chemistry</span>
+          <span class="subject-badge">Biology</span>
+          <span class="subject-badge">English</span>
+          <span class="subject-badge">Urdu</span>
+          <span class="subject-badge">History</span>
+          <span class="subject-badge">Geography</span>
+          <span class="subject-badge">Economics</span>
+          <span class="subject-badge">Computer Science</span>
+          <span class="subject-badge">Accounting</span>
+          <span class="subject-badge">Business</span>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <h2>Pricing & Packages</h2>
+        <div class="grid">
+          <div class="stat">
+            <div class="stat-num">$2.16</div>
+            <div class="stat-text">Single Online Session (1 hour)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">$18</div>
+            <div class="stat-text">10-session Package (20% discount)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">$32.40</div>
+            <div class="stat-text">Monthly Unlimited (8 sessions/month)</div>
+          </div>
+        </div>
+        <p style="text-align:center;color:var(--muted)">First consultation is FREE! Call or WhatsApp to schedule.</p>
+      </section>
+
+      <section id="booking" class="section">
+        <h2>Book Your First Session</h2>
+        <div class="booking-form">
+          <form onsubmit="handleBooking(event)">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Your contact number" required>
+            </div>
+            <div class="form-group">
+              <label>Subject/Level</label>
+              <select required>
+                <option value="">Select a subject</option>
+                <option>Mathematics (All Levels)</option>
+                <option>Physics (O/A-Levels)</option>
+                <option>Chemistry (O/A-Levels)</option>
+                <option>Biology (O/A-Levels)</option>
+                <option>English (TOEFL/IELTS)</option>
+                <option>Accounting & Business</option>
+                <option>Test Prep (MCAT/ECAT)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Mode</label>
+              <select required>
+                <option value="">Select mode</option>
+                <option>Online (Zoom)</option>
+                <option>In-Person at Center</option>
+                <option>Group Class</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Availability</label>
+              <textarea placeholder="E.g., Weekends, evenings after 5 PM" rows="2"></textarea>
+            </div>
+            <button class="btn" type="submit" style="width:100%">Schedule Free Consultation</button>
+          </form>
+          <p style="text-align:center;margin-top:16px;color:var(--muted)">Quick inquiry? Reach out on WhatsApp!</p>
+          <a class="btn whatsapp-btn" href="https://wa.me/923128778123?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Pro%20Tutor%20Academy!" style="width:100%;text-align:center;margin-top:8px">Message on WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="section" style="background:var(--light);padding:24px;border-radius:12px">
+        <h2 style="text-align:center">Why Our Students Choose Us</h2>
+        <div class="grid">
+          <div style="text-align:center">
+            <p style="font-size:24px">✅ Expert Tutors</p>
+            <p style="color:var(--muted);font-size:14px">Certified professionals with 5+ years experience.</p>
+          </div>
+          <div style="text-align:center">
+            <p style="font-size:24px">⏱️ Flexible Timing</p>
+            <p style="color:var(--muted);font-size:14px">Sessions scheduled around your availability.</p>
+          </div>
+          <div style="text-align:center">
+            <p style="font-size:24px">📊 Proven Results</p>
+            <p style="color:var(--muted);font-size:14px">95% of students improve their grades within 3 months.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact & Google Business</h2>
+        <p><strong>📞 Phone:</strong> 03128778123</p>
+        <p><strong>📧 Email:</strong> saniaobaid725@email.com</p>
+        <p><strong>📍 Location:</strong> Tariq Road, Karachi, Pakistan</p>
+        <p><strong>🕒 Hours:</strong> Mon–Fri, 4 PM–8 PM | Sat–Sun, 10 AM–8 PM</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>Pro Tutor Academy © 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleBooking(e){
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('input[type="text"]').value;
+        const email = form.querySelector('input[type="email"]').value;
+        alert(`Thank you, ${name}! Your consultation request has been received. We'll contact you at ${email} shortly.`);
+        form.reset();
+      }
+    </script>
+  </body>
+</html>
